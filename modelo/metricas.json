@@ -1,0 +1,217 @@
+{
+  "modelo": "Regresión Logística",
+  "accuracy": 0.7954,
+  "balanced_accuracy": 0.709,
+  "f1_macro": 0.6914,
+  "f1_weighted": 0.8022,
+  "qwk": 0.9255,
+  "acc_pm1": 1.0,
+  "roc_auc_ovr": 0.959,
+  "gpa_r2": 0.9512,
+  "gpa_mae": 0.1546,
+  "mejores_hiperparametros": {
+    "C": 10
+  },
+  "features": [
+    "Age",
+    "StudyTimeWeekly",
+    "Absences",
+    "ParentalEducation",
+    "ParentalSupport",
+    "Ethnicity",
+    "Gender",
+    "Tutoring",
+    "Extracurricular",
+    "Sports",
+    "Music",
+    "Volunteering"
+  ],
+  "n_registros": 2392,
+  "n_train": 1913,
+  "n_test": 479,
+  "etiquetas_corregidas": 168,
+  "cv_comparacion": [
+    {
+      "Modelo": "Regresión Logística",
+      "Accuracy": 0.7998,
+      "Bal. Accuracy": 0.7384,
+      "F1-macro": 0.7036,
+      "F1-macro (±)": 0.019
+    },
+    {
+      "Modelo": "Gradient Boosting",
+      "Accuracy": 0.7805,
+      "Bal. Accuracy": 0.6381,
+      "F1-macro": 0.648,
+      "F1-macro (±)": 0.0426
+    },
+    {
+      "Modelo": "SVM (RBF)",
+      "Accuracy": 0.769,
+      "Bal. Accuracy": 0.6663,
+      "F1-macro": 0.6471,
+      "F1-macro (±)": 0.0275
+    },
+    {
+      "Modelo": "Random Forest",
+      "Accuracy": 0.7507,
+      "Bal. Accuracy": 0.5688,
+      "F1-macro": 0.5843,
+      "F1-macro (±)": 0.0205
+    },
+    {
+      "Modelo": "Árbol de Decisión",
+      "Accuracy": 0.6916,
+      "Bal. Accuracy": 0.5991,
+      "F1-macro": 0.5663,
+      "F1-macro (±)": 0.0231
+    },
+    {
+      "Modelo": "KNN",
+      "Accuracy": 0.69,
+      "Bal. Accuracy": 0.4474,
+      "F1-macro": 0.4588,
+      "F1-macro (±)": 0.0257
+    }
+  ],
+  "test_comparacion": [
+    {
+      "Modelo": "Regresión Logística (ajustado)",
+      "Accuracy": 0.7954,
+      "F1-macro": 0.6914,
+      "QWK": 0.9255
+    },
+    {
+      "Modelo": "Regresión Logística",
+      "Accuracy": 0.7766,
+      "F1-macro": 0.6676,
+      "QWK": 0.9194
+    },
+    {
+      "Modelo": "Gradient Boosting",
+      "Accuracy": 0.7912,
+      "F1-macro": 0.646,
+      "QWK": 0.9202
+    },
+    {
+      "Modelo": "SVM (RBF)",
+      "Accuracy": 0.737,
+      "F1-macro": 0.622,
+      "QWK": 0.8982
+    },
+    {
+      "Modelo": "Random Forest",
+      "Accuracy": 0.7724,
+      "F1-macro": 0.6053,
+      "QWK": 0.9109
+    },
+    {
+      "Modelo": "Árbol de Decisión",
+      "Accuracy": 0.6618,
+      "F1-macro": 0.5275,
+      "QWK": 0.871
+    },
+    {
+      "Modelo": "KNN",
+      "Accuracy": 0.6973,
+      "F1-macro": 0.4588,
+      "QWK": 0.8388
+    }
+  ],
+  "importancia_permutacion": {
+    "Absences": 0.466,
+    "StudyTimeWeekly": 0.0952,
+    "ParentalSupport": 0.0788,
+    "Sports": 0.0575,
+    "Tutoring": 0.0417,
+    "Extracurricular": 0.0314,
+    "Gender": 0.0121,
+    "Music": 0.0078,
+    "Volunteering": 0.0032,
+    "Ethnicity": 0.0007,
+    "ParentalEducation": -0.0049,
+    "Age": -0.0065
+  },
+  "matriz_confusion": [
+    [
+      9,
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      30,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      52,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      14,
+      64,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      29,
+      226
+    ]
+  ],
+  "reporte_clases": {
+    "A": {
+      "precision": 0.5,
+      "recall": 0.6,
+      "f1-score": 0.5454545454545454,
+      "support": 15.0
+    },
+    "B": {
+      "precision": 0.6521739130434783,
+      "recall": 0.6122448979591837,
+      "f1-score": 0.631578947368421,
+      "support": 49.0
+    },
+    "C": {
+      "precision": 0.6842105263157895,
+      "recall": 0.6753246753246753,
+      "f1-score": 0.6797385620915033,
+      "support": 77.0
+    },
+    "D": {
+      "precision": 0.5925925925925926,
+      "recall": 0.7710843373493976,
+      "f1-score": 0.6701570680628273,
+      "support": 83.0
+    },
+    "F": {
+      "precision": 0.9783549783549783,
+      "recall": 0.8862745098039215,
+      "f1-score": 0.9300411522633745,
+      "support": 255.0
+    },
+    "accuracy": 0.7954070981210856,
+    "macro avg": {
+      "precision": 0.6814664020613678,
+      "recall": 0.7089856840874356,
+      "f1-score": 0.6913940550481342,
+      "support": 479.0
+    },
+    "weighted avg": {
+      "precision": 0.815879826578603,
+      "recall": 0.7954070981210856,
+      "f1-score": 0.8021974663054107,
+      "support": 479.0
+    }
+  }
+}
